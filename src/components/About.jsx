@@ -2,11 +2,14 @@ import React from 'react';
 
 export default function About({ showToast }) {
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('purusottamjalthal.badabari@gmail.com').then(() => {
-      showToast('Email address copied!');
-    }).catch(() => {
-      showToast('Failed to copy email');
-    });
+    navigator.clipboard
+      .writeText('purusottamjalthal.badabari@gmail.com')
+      .then(() => {
+        showToast('Email address copied!');
+      })
+      .catch(() => {
+        showToast('Failed to copy email');
+      });
   };
 
   return (
@@ -14,7 +17,9 @@ export default function About({ showToast }) {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Who I Am</span>
-          <h2 className="section-title">About <span className="highlight">Me</span></h2>
+          <h2 className="section-title">
+            About <span className="highlight">Me</span>
+          </h2>
           <p className="section-subtitle">A background on my journey, studies, and engineering goals.</p>
         </div>
 
@@ -30,7 +35,9 @@ export default function About({ showToast }) {
               My goal is to contribute to innovative software projects, grow as a software developer, and solve practical real-world problems.
             </p>
             <div style={{ marginTop: '24px' }}>
-              <a href="/Purusottam Barakoti_CV.pdf" download className="btn btn-primary" id="download-cv-about">Download CV</a>
+              <a href="/Purusottam Barakoti_CV.pdf" download className="btn btn-primary" id="download-cv-about">
+                Download CV
+              </a>
             </div>
           </div>
 
@@ -53,9 +60,16 @@ export default function About({ showToast }) {
             </div>
             <div className="info-row">
               <span className="info-lbl">Email</span>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
-                <span className="info-val" style={{ fontSize: '0.82rem', wordBreak: 'break-all' }}>purusottamjalthal.badabari@gmail.com</span>
-                <button className="btn btn-sm btn-outline" id="copy-email-btn" title="Copy email" onClick={handleCopyEmail}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', flexWrap: 'wrap' }}>
+                <span className="info-val" style={{ fontSize: '0.85rem', wordBreak: 'break-all' }}>
+                  purusottamjalthal.badabari@gmail.com
+                </span>
+                <button
+                  className="btn btn-sm btn-outline"
+                  id="copy-email-btn"
+                  title="Copy email"
+                  onClick={handleCopyEmail}
+                >
                   Copy
                 </button>
               </div>

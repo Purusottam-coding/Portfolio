@@ -59,7 +59,9 @@ export default function Contact({ showToast }) {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Let's Connect</span>
-          <h2 className="section-title">Get In <span className="highlight">Touch</span></h2>
+          <h2 className="section-title">
+            Get In <span className="highlight">Touch</span>
+          </h2>
           <p className="section-subtitle">Feel free to reach out for opportunities or collaboration.</p>
         </div>
 

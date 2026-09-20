@@ -27,7 +27,9 @@ export default function Education() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">My Background</span>
-          <h2 className="section-title">My <span className="highlight">Education</span></h2>
+          <h2 className="section-title">
+            My <span className="highlight">Education</span>
+          </h2>
           <p className="section-subtitle">Academic milestones shaping my computer science path.</p>
         </div>
 

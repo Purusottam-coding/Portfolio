@@ -23,8 +23,12 @@ export default function Projects({ onOpenModal }) {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">What I've Built</span>
-          <h2 className="section-title">My <span className="highlight">Projects</span></h2>
-          <p className="section-subtitle">A selection of projects demonstrating full-stack and backend computing capabilities.</p>
+          <h2 className="section-title">
+            My <span className="highlight">Projects</span>
+          </h2>
+          <p className="section-subtitle">
+            A selection of projects demonstrating full-stack and backend computing capabilities.
+          </p>
         </div>
 
         <div className="projects-filter">
@@ -44,7 +48,9 @@ export default function Projects({ onOpenModal }) {
             <div className="project-card" key={project.id}>
               <div className="project-tags">
                 {project.tags.map((tag, idx) => (
-                  <span className="project-tag" key={idx}>{tag}</span>
+                  <span className="project-tag" key={idx}>
+                    {tag}
+                  </span>
                 ))}
               </div>
               <h3 className="project-title">{project.title}</h3>

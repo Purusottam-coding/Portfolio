@@ -6,7 +6,9 @@ export default function Certifications({ onOpenCertModal }) {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Achievements</span>
-          <h2 className="section-title">My <span className="highlight">Certifications</span></h2>
+          <h2 className="section-title">
+            My <span className="highlight">Certifications</span>
+          </h2>
           <p className="section-subtitle">Validated skills and learning paths.</p>
         </div>
 

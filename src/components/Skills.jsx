@@ -25,7 +25,9 @@ export default function Skills() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">What I Know</span>
-          <h2 className="section-title">My <span class="highlight">Skills</span></h2>
+          <h2 className="section-title">
+            My <span className="highlight">Skills</span>
+          </h2>
           <p className="section-subtitle">Languages, frameworks, databases, and developer tools.</p>
         </div>
 

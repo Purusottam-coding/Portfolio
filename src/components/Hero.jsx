@@ -5,10 +5,6 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="badge-status">
-         
-            <span>Available for Opportunities</span>
-          </div>
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Purusottam</span><br />Barakoti
           </h1>
@@ -16,8 +12,12 @@ export default function Hero() {
             Passionate <strong>Student &amp; Aspiring Developer</strong> crafting clean code, solving real problems, and building impactful digital experiences.
           </p>
           <div className="hero-cta">
-            <a href="#projects" className="btn btn-primary" id="view-projects-btn">View Projects</a>
-            <a href="/Purusottam Barakoti_CV.pdf" download className="btn btn-outline" id="download-cv-hero">Download CV</a>
+            <a href="#projects" className="btn btn-primary" id="view-projects-btn">
+              View Projects
+            </a>
+            <a href="/Purusottam Barakoti_CV.pdf" download className="btn btn-outline" id="download-cv-hero">
+              Download CV
+            </a>
           </div>
           <div className="hero-stats">
             <div className="stat-box">

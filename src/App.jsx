@@ -7,7 +7,9 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import FindMeOn from './components/FindMeOn';
 import Footer from './components/Footer';
+import ParticleBackground from './components/ParticleBackground';
 import ProjectModal from './components/Modals/ProjectModal';
 import CertModal from './components/Modals/CertModal';
 import Toast from './components/Toast';
@@ -39,7 +41,11 @@ export default function App() {
 
   return (
     <div className="app-container">
+      {/* Retained Portfolio Particle Background */}
+      <ParticleBackground />
+
       <Navbar />
+
       <main>
         <Hero />
         <About showToast={showToast} />
@@ -48,7 +54,9 @@ export default function App() {
         <Education />
         <Certifications onOpenCertModal={() => setIsCertModalOpen(true)} />
         <Contact showToast={showToast} />
+        <FindMeOn />
       </main>
+
       <Footer />
 
       {/* Modals */}
